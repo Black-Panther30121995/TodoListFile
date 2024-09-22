@@ -3,8 +3,8 @@ const todoList = JSON.parse(localStorage.getItem('todoList'));
 if(!todoList)
 {
         todoList=[{
-            name:'',
-            dueDate:'',
+            name:'going to movies',
+            dueDate:'13-12-2024',
         }];
 };
 
