@@ -1,8 +1,12 @@
-const todoList = JSON.parse(localStorage.getItem('todoList'))||
-        {
+const todoList = JSON.parse(localStorage.getItem('todoList'));
+
+if(!todoList)
+{
+        todoList=[{
             name:'',
             dueDate:'',
-        };
+        }];
+};
 
         renderTodoList();
 
